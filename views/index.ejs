@@ -16,31 +16,18 @@
                 <%= comment.id %>
                     <%= comment.content %>
                         <form action="/update/<%= comment.id %>" method="post">
-
                             <input type="text" name="content">
-
                             <input type="submit" value="수정하기">
                         </form>
-                        <form action="/delete/<%= comment.id %>" method="post">
-
-                         
-
+                        <form action="/delete/<%= comment.id %>" method="post">                       
                             <input type="submit" value="삭제">
                         </form>
-
             </li>
             <% } %>
     </ul>
     <hr>
-
     <form action="/create" method="post">
-
         <input type="text" name="content"><br><br>
-
         <input type="submit" value="Submit">
-
-
-
 </body>
-
 </html>
